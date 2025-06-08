@@ -76,7 +76,9 @@ const BrokerDetails = () => {
           </div>
         </div>
         <div className="textContact">
-          <p>Ready to start a conversation? Contact Elizabeth Ross today.</p>
+          <p>
+            Ready to start a conversation? Contact Freya Aurora Camila today.
+          </p>
           <button onClick={WhatsappClick}>Contact Me</button>
         </div>
       </header>
