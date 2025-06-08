@@ -1,4 +1,3 @@
-import React from "react";
 import "./BrokerDetails.css";
 const BrokerDetails = () => {
   const phoneNumber = "+19125536855";

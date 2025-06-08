@@ -1,4 +1,3 @@
-import React from "react";
 import "./Crypto.css";
 import img1 from "../../assets/image (1)-Picsart-AiImageEnhancer.jpg";
 import img2 from "../../assets/image (11)-Picsart-AiImageEnhancer.jpg";

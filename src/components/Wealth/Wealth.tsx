@@ -1,4 +1,3 @@
-import React from "react";
 import "./Wealth.css";
 const Wealth = () => {
   return (

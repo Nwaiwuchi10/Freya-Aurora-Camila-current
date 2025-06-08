@@ -9,7 +9,6 @@ import Wealth from "../../components/Wealth/Wealth";
 import Crypto from "../../components/Crypto/Crypto";
 import TradingTicker from "../../components/TradingTicker/TradingTicker";
 import BrokerDetails from "../../components/BrokerDetails/BrokerDetails";
-// import TradingTicker from "../../components/TradingTicker/TradingTicker";
 
 const Home = () => {
   return (
