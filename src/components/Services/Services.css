@@ -1,6 +1,7 @@
 .service-page {
   background-color: whitesmoke;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .service-border {
   width: 80%;
@@ -9,6 +10,7 @@
   background-color: white;
   margin-right: auto;
   height: 120vh;
+  /* margin-bottom: 100px; */
 }
 .service-toggle-contents {
   display: flex;

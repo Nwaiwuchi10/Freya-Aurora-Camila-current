@@ -24,13 +24,13 @@ const Navbar: React.FC = () => {
           <a href="#">Services</a>
           <ul className="dropdown-content">
             <li>
-              <a href="#">Web Development</a>
+              <a href="#">Business Development</a>
             </li>
             <li>
-              <a href="#">Mobile Apps</a>
+              <a href="#">Crypto Investment</a>
             </li>
             <li>
-              <a href="#">UI/UX Design</a>
+              <a href="#">Investment Banker & Consultant</a>
             </li>
           </ul>
         </li>

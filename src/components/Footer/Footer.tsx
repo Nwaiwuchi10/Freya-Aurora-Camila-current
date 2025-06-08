@@ -1,13 +1,20 @@
 import React from "react";
 import "./Footer.css";
-import { FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const Footer: React.FC = () => {
+  const phoneNumber = "+19125536855";
+  const WhatsappClick = () => {
+    const url = `https://wa.me/${phoneNumber}`;
+    window.open(url, "_blank");
+  };
   return (
     <footer className="footer-container">
       <div className="footer-icons">
-        <FaTwitter className="footer-icon" />
-        <FaEnvelope className="footer-icon" />
+        <FaWhatsapp className="footer-icon" onClick={WhatsappClick} />
+        <a href="mailto:freyaauroracamila@gmail.com">
+          <FaEnvelope className="footer-icon" />
+        </a>
       </div>
       <hr className="footer-divider" />
       <div className="footer-links">

@@ -4,10 +4,15 @@ import img1 from "../../assets/1-Picsart-AiImageEnhancer.jpg";
 import img2 from "../../assets/2-Picsart-AiImageEnhancer.jpg";
 import img3 from "../../assets/3-Picsart-AiImageEnhancer.jpg";
 import { FaEnvelope } from "react-icons/fa";
-
+import whatsapp from "../../assets/whatsapp.png";
 const images = [img1, img2, img3];
 
 const HeroSection: React.FC = () => {
+  const phoneNumber = "+19125536855";
+  const WhatsappClick = () => {
+    const url = `https://wa.me/${phoneNumber}`;
+    window.open(url, "_blank");
+  };
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -37,14 +42,21 @@ const HeroSection: React.FC = () => {
           Wealth Advisor, International Client Advisor
         </p>
         <p>
-          <FaEnvelope style={{ color: "white", fontSize: "30px" }} />
+          <a href="mailto:freyaauroracamila@gmail.com">
+            <FaEnvelope style={{ color: "white", fontSize: "30px" }} />
+          </a>
         </p>
         <p>
           <span>Direct:</span>
-          <span>(+14698985517) </span>
+          <span>(+19125536855) </span>
         </p>
 
-        <button>Get Started</button>
+        <button onClick={WhatsappClick}>Get Started</button>
+      </div>
+      <div className="whatsapp-img-div">
+        <div className="whatsapp-img-size" onClick={WhatsappClick}>
+          <img src={whatsapp} alt="whatsapp" className="whatsapp-img" />
+        </div>{" "}
       </div>
     </div>
   );

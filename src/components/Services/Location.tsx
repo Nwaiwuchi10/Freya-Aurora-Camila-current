@@ -4,7 +4,7 @@ const Location = () => {
       <h1>LOCATION</h1>
       <p>
         Harborside 2 200 Hudson Street, Suite 501, Jersey City, NJ 07311 Direct:
-        +1(432)246-4294
+        +19125536855
       </p>
     </div>
   );

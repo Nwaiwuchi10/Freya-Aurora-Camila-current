@@ -4,6 +4,12 @@ import About from "../../components/About/About";
 import ServicesSection from "../../components/Services/Services";
 import FaqSection from "../../components/FAQ/Faq";
 import Footer from "../../components/Footer/Footer";
+import TestimonialSlider from "../../components/Testimonial/Testimonal";
+import Wealth from "../../components/Wealth/Wealth";
+import Crypto from "../../components/Crypto/Crypto";
+import TradingTicker from "../../components/TradingTicker/TradingTicker";
+import BrokerDetails from "../../components/BrokerDetails/BrokerDetails";
+// import TradingTicker from "../../components/TradingTicker/TradingTicker";
 
 const Home = () => {
   return (
@@ -12,8 +18,12 @@ const Home = () => {
       <HeroSection />
       <About />
       <ServicesSection />
+      <TradingTicker />
+      <Wealth />
+      <Crypto />
+      <BrokerDetails />
       <FaqSection />
-      {/* <TestimonialSlider /> */}
+      <TestimonialSlider />
       <Footer />
     </div>
   );

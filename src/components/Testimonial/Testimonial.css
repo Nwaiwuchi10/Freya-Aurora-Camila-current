@@ -1,55 +1,120 @@
-/* styles/testimonial.css */
+.testimonial {
+  background-color: whitesmoke;
+  padding-top: 50px;
+}
+.testimonial h3 {
+  color: rgb(15 142 199/ 1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.testimonial h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding-bottom: 100px;
+}
+
 .testimonial-slider {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  justify-content: center;
 }
 
 .testimonial-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 400px;
   flex: 1;
-  display: flex;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  min-width: 45%;
-}
-
-.testimonial-card:hover {
-  transform: scale(1.02);
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .testimonial-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-right: 20px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .testimonial-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-text {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #333;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-name {
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-stars .star {
   color: gold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
-.testimonial-stars .empty {
+.testimonial-stars .star.empty {
   color: #ddd;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #000;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
 }
