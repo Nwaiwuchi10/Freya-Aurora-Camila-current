@@ -30,8 +30,8 @@ const HeroSection: React.FC = () => {
       className="hero-section"
       style={{
         backgroundImage: `linear-gradient(
-          rgba(10, 8, 12, 0.73), 
-          rgba(0, 0, 0, 0.95)
+          rgba(10, 8, 12, 0.47), 
+          rgba(0, 0, 0, 0.57)
         ), url(${images[currentImageIndex]})`,
       }}
     >
